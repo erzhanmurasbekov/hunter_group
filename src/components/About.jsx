@@ -20,7 +20,7 @@ const About = () => {
           {/* text about below */}
           <div className="md:w-3/5 mx-auto">
             <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Pro nashu kompaniyu
             </h2>
 
             <p className="md:w-3/4 text-sm text-neutralGrey mb-8">

@@ -60,7 +60,7 @@ const Services = () => {
 
       <div className="mt-14 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
         {services.map((service,id) => (
-          <div key={id} className="px-4 py-8 text-center md:w-[400px] mx-auto md:h-80 rounded-md shadow  hover:-translate-y-5 hover:border-b-4  hover:border-indigo-700 transition-all duration-300 flex flex-col gap-y-4 items-center justify-center h-full">
+          <div key={id} className="px-4 py-8 text-center md:w-[400px] mx-auto md:h-80 rounded-md shadow  hover:-translate-y-5 hover:border-b-4  hover:border-brandPrimary transition-all duration-300 flex flex-col gap-y-4 items-center justify-center h-full">
             <div className="bg-[#E8F5E9] mb-4 h-14 w-28 mx-auto rounded-tl-3xl rounded-br-3xl">
               <img className="-ml-5" src={service.img} alt="" />
             </div>

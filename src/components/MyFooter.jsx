@@ -8,6 +8,7 @@ import {
   
 } from "react-icons/bs";
 import hunterlogo from '../assets/hunterlogo.png'
+import {Link} from 'react-router-dom'
 
 const MyFooter = () => {
   return (
@@ -15,7 +16,7 @@ const MyFooter = () => {
       <Footer container className="bg-gray-500 rounded-none w-full">
         <div className="w-full ">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-            <div>
+            <div className="w-1/3">
               <Footer.Brand
                 src={hunterlogo}
                 alt="Flowbite Logo"
@@ -23,11 +24,17 @@ const MyFooter = () => {
               />
             </div>
 
-            <div className="w-[280px]">
-              <div>
+            <Link to={'/policy'}>
+              <h2 className="mx-auto">Politika konfidentsialnosti</h2>
+            </Link>
+
+            <div className="w-1/3 flex  justify-end">
+              <div className="w-[280px]">
                 <h2>
                   <a href="mailto:erzhanmurasbekov@gmail.com" target="_blank">
-                    <span className="xl:text-2xl text-xl">huntergroup@gmail.com</span>
+                    <span className="xl:text-2xl text-xl">
+                      huntergroup@gmail.com
+                    </span>
                   </a>
                 </h2>
               </div>
