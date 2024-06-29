@@ -15,8 +15,8 @@ const MyFooter = () => {
     <div className="text-white ">
       <Footer container className="bg-gray-500 rounded-none w-full">
         <div className="w-full ">
-          <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-            <div className="w-1/3">
+          <div className="grid w-full justify-between  py-2 xl:py-0 sm:flex sm:justify-between md:flex md:grid-cols-1 ">
+            <div className="xl:w-1/3">
               <Footer.Brand
                 src={hunterlogo}
                 alt="Flowbite Logo"
@@ -28,7 +28,7 @@ const MyFooter = () => {
               <h2 className="mx-auto">Politika konfidentsialnosti</h2>
             </Link>
 
-            <div className="w-1/3 flex  justify-end">
+            <div className="xl:w-1/3 flex  justify-end">
               <div className="w-[280px]">
                 <h2>
                   <a href="mailto:erzhanmurasbekov@gmail.com" target="_blank">

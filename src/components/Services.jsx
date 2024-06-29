@@ -28,16 +28,19 @@ const Services = () => {
           quasi architecto error.
         </p>
 
-        <div className="my-12 flex flex-wrap justify-between items-center gap-8">
+        <div className="my-12  md:flex md:flex-wrap md:justify-between md:items-center md:gap-8">
           <img
+            className="mx-auto"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHdYJTPA4MsLdsD6xiSWMFgrJgC3ptwaJRw&s"
             alt=""
           />
           <img
+            className="mx-auto"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHdYJTPA4MsLdsD6xiSWMFgrJgC3ptwaJRw&s"
             alt=""
           />
           <img
+            className="mx-auto"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHdYJTPA4MsLdsD6xiSWMFgrJgC3ptwaJRw&s"
             alt=""
           />
@@ -59,12 +62,16 @@ const Services = () => {
       {/* service cards */}
 
       <div className="mt-14 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
-        {services.map((service,id) => (
-          <div key={id} className="px-4 py-8 text-center md:w-[400px] mx-auto md:h-80 rounded-md shadow  hover:-translate-y-5 hover:border-b-4  hover:border-brandPrimary transition-all duration-300 flex flex-col gap-y-4 items-center justify-center h-full">
+        {services.map((service, id) => (
+          <div
+            key={id}
+            className="px-4 py-8 text-center md:w-[400px] mx-auto md:h-80 rounded-md shadow  hover:-translate-y-5 hover:border-b-4  hover:border-brandPrimary transition-all duration-300 flex flex-col gap-y-4 items-center justify-center h-full">
             <div className="bg-[#E8F5E9] mb-4 h-14 w-28 mx-auto rounded-tl-3xl rounded-br-3xl">
               <img className="-ml-5" src={service.img} alt="" />
             </div>
-            <h4 className="text-2xl font-bold text-neutralDGrey mb-2 px-2">{service.title}</h4>
+            <h4 className="text-2xl font-bold text-neutralDGrey mb-2 px-2">
+              {service.title}
+            </h4>
             <p className="text-sm text-neutralGrey">{service.description}</p>
           </div>
         ))}
