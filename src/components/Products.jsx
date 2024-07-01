@@ -11,7 +11,7 @@ import catalog2 from "../assets/catalog2.jpg";
 
 const Products = () => {
   return (
-    <div className="mx-auto" id="product">
+    <div className="mx-auto " id="product">
       {/* about text */}
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8">
         <div className="md:w-11/12 mx-auto flex-col md:flex-row justify-between items-center gap-12">

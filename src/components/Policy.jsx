@@ -2,12 +2,12 @@ import React from "react";
 import hunterlogo from "../assets/hunterlogo.png";
 import { FaCalendarAlt, FaStore } from "react-icons/fa";
 import MyFooter from "../components/MyFooter";
+import transition from "../../transition";
 
 const PrivacyPolicy = () => {
   return (
     <div className="container mx-auto px-4 mt-24 xl:">
       <header className="py-8 text-center">
-        
         <h1 className="text-2xl font-bold">Privacy Policy</h1>
       </header>
 
@@ -83,11 +83,9 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <footer className="py-8">
-        
-      </footer>
+      <footer className="py-8"></footer>
     </div>
   );
 };
 
-export default PrivacyPolicy;
+export default transition(PrivacyPolicy);

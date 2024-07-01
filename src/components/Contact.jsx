@@ -21,15 +21,18 @@ const Contact = () => {
             <h1 className="text-3xl text-gray-600 font-semibold mb-8 mx-auto">
               Напишите Нам
             </h1>
-            <form method="post" className="flex-1 flex flex-col gap-4 md:gap-6 w-full mx-auto border-gray-600" onSubmit={(e)=>{
-              e.preventDefault();
-              setSent(true);
-            }}>
+            <form
+              method="post"
+              className="flex-1 flex flex-col gap-4 md:gap-6 w-full mx-auto border-gray-600"
+              onSubmit={(e) => {
+                e.preventDefault();
+                setSent(true);
+              }}>
               <div className="flex flex-col xl:flex-row gap-4 md:gap-x-6 w-full">
                 <input
                   type="text"
                   placeholder="Name"
-                  className="border-4 rounded-md"
+                  className="border-2 rounded-md outline-none "
                   name="name_from"
                   required
                   onChange={(e) => {
@@ -39,7 +42,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="border-4 rounded-md"
+                  className="border-2 rounded-md "
                   name="email_from"
                   required
                   onChange={(e) => {
@@ -49,7 +52,7 @@ const Contact = () => {
                 <input
                   type="number"
                   placeholder="Number"
-                  className="border-4 rounded-md"
+                  className="border-2 rounded-md"
                   name="number_from"
                   required
                   onChange={(e) => {
@@ -60,7 +63,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Subject"
-                className="border-4 rounded-md"
+                className="border-2 rounded-md"
                 onChange={(e) => {
                   setSubject(e.target.value);
                 }}
@@ -70,15 +73,12 @@ const Contact = () => {
                   setMessage(e.target.value);
                 }}
                 placeholder="Message"
-                className="border-4 rounded-md h-[200px]"
+                className="border-2 rounded-md h-[200px]"
                 name="message"
                 value={message}></textarea>
               <button
                 disabled={sent}
-                onClick={(e) => {
-                  
-                  
-                }}
+                onClick={(e) => {}}
                 className={` w-[200px] font-semibold mx-auto h-11 ${
                   sent ? "bg-gray-700" : "bg-neutralDGrey"
                 } text-white rounded-lg border border-white/50 px-8 transition-all duration-300 flex justify-center items-center overflow-hidden group`}>

@@ -15,14 +15,14 @@ const Home = () => {
                 alt=""
               />
             </div>
-            <div className="md:w-1/2">
-              <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug">
+            <div className="md:w-1/2 ">
+              <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug text-center md:text-start">
                 Spirt i vodka{" "}
                 <span className="text-brandPrimary leading-snug">
                   from hunter
                 </span>
               </h1>
-              <p className="text-neutralGrey text-base mb-8">
+              <p className="text-neutralGrey text-base mb-8 text-center md:text-start">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Doloremque, odit.
               </p>
@@ -37,13 +37,13 @@ const Home = () => {
               />
             </div>
             <div className="md:w-1/2">
-              <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug">
+              <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug text-center md:text-start">
                 Spirt i vodka{" "}
-                <span className="text-brandPrimary leading-snug">
+                <span className="text-brandPrimary leading-snug ">
                   from hunter
                 </span>
               </h1>
-              <p className="text-neutralGrey text-base mb-8">
+              <p className="text-neutralGrey text-base mb-8 text-center md:text-start">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Doloremque, odit.
               </p>
@@ -58,13 +58,13 @@ const Home = () => {
               />
             </div>
             <div className="md:w-1/2">
-              <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug">
+              <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug text-center md:text-start">
                 Spirt i vodka{" "}
-                <span className="text-brandPrimary leading-snug">
+                <span className="text-brandPrimary leading-snug ">
                   from hunter
                 </span>
               </h1>
-              <p className="text-neutralGrey text-base mb-8">
+              <p className="text-neutralGrey text-base mb-8 text-center md:text-start">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Doloremque, odit.
               </p>

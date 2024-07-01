@@ -1,4 +1,4 @@
-import { Link as Linker } from "react-router-dom";
+import { Link as Linker, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { Link } from "react-scroll";
@@ -7,6 +7,7 @@ import hunterlogo from "../assets/hunterlogo.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -25,6 +26,16 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleNavClick = (path) => {
+    navigate("/");
+    setTimeout(() => {
+      const scroll = document.getElementById(path);
+      if (scroll) {
+        scroll.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Delay to ensure navigation to home page first
+  };
 
   const navItems = [
     { link: "Главная", path: "home" },
@@ -46,27 +57,20 @@ const Navbar = () => {
           <Linker
             to="/"
             className="text-2xl font-semibold flex items-center space-x-3">
-            
-            
-              <img
-                src={hunterlogo}
-                alt=""
-                className="w-32 inline-block items-center"
-              />
-            
+            <img
+              src={hunterlogo}
+              alt=""
+              className="w-32 inline-block items-center"
+            />
           </Linker>
 
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
-              <Link
+              <li
                 key={path}
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-100}
                 className="block text-base text-gray900 hover:text-brandPrimary first:font-medium cursor-pointer">
-                {link}
-              </Link>
+                <button onClick={() => handleNavClick(path)}>{link}</button>
+              </li>
             ))}
           </ul>
           <div className="md:hidden">
@@ -83,26 +87,27 @@ const Navbar = () => {
         </div>
         <div
           className={`fixed inset-x-0 top-0 z-40 p-4 bg-brandPrimary transition-transform transform ${
-            isMenuOpen ? "translate-y-24" : "-translate-y-full"
+            isMenuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
           style={{ transitionDuration: "300ms" }}>
           <div className="flex justify-between items-center">
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none"></button>
+              className="text-white focus:outline-none">
+              <FaXmark className="h-6 w-6" />
+            </button>
           </div>
           <div className="mt-4 space-y-4">
             {navItems.map(({ link, path }) => (
-              <Link
+              <button
                 key={path}
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                className="block text-base text-white hover:text-brandPrimary first:font-medium cursor-pointer"
-                onClick={() => setIsMenuOpen(false)}>
+                onClick={() => {
+                  handleNavClick(path);
+                  setIsMenuOpen(false);
+                }}
+                className="block text-base text-white hover:text-brandPrimary first:font-medium cursor-pointer">
                 {link}
-              </Link>
+              </button>
             ))}
           </div>
         </div>
