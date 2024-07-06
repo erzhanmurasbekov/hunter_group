@@ -67,7 +67,7 @@ const Services = () => {
             key={id}
             className="px-4 py-8 text-center md:w-[400px] mx-auto md:h-80 rounded-md shadow  hover:-translate-y-5 hover:border-b-4  hover:border-brandPrimary transition-all duration-300 flex flex-col gap-y-4 items-center justify-center h-full">
             <div className="bg-[#E8F5E9] mb-4 h-14 w-28 mx-auto rounded-tl-3xl rounded-br-3xl">
-              <img className="-ml-5" src={service.img} alt="" />
+              <img className=" " src={service.img} alt="" />
             </div>
             <h4 className="text-2xl font-bold text-neutralDGrey mb-2 px-2">
               {service.title}

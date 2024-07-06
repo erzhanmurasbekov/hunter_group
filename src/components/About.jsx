@@ -19,11 +19,11 @@ const About = () => {
           </div>
           {/* text about below */}
           <div className="md:w-3/5 mx-auto">
-            <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5">
+            <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5 text-center md:text-start">
               Pro nashu kompaniyu
             </h2>
 
-            <p className="md:w-3/4 text-sm text-neutralGrey mb-8">
+            <p className="md:w-3/4 text-sm text-neutralGrey mb-8 text-center md:text-start">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
               ex velit distinctio ducimus modi obcaecati? Eveniet quaerat minus
               fugiat libero animi incidunt totam quam unde, a quod aliquid
@@ -38,8 +38,8 @@ const About = () => {
 
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16">
         <div className=" flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="md:w-1/2 ">
-            <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3">
+          <div className="md:w-1/2 my-auto">
+            <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3 text-center m-auto">
               Helping a local <br />
               <span className="text-brandPrimary">
                 {" "}
@@ -47,7 +47,7 @@ const About = () => {
               </span>
             </h2>
 
-            <p className="md:w-3/4 text-sm text-neutralGrey mb-8">
+            <p className="md:w-3/4 text-sm text-neutralGrey mb-8 text-center m-auto">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             </p>
           </div>

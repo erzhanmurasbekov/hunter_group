@@ -87,15 +87,11 @@ const Navbar = () => {
         </div>
         <div
           className={`fixed inset-x-0 top-0 z-40 p-4 bg-brandPrimary transition-transform transform ${
-            isMenuOpen ? "translate-y-0" : "-translate-y-full"
+            isMenuOpen ? "translate-y-[90px]" : "-translate-y-full"
           }`}
           style={{ transitionDuration: "300ms" }}>
           <div className="flex justify-between items-center">
-            <button
-              onClick={toggleMenu}
-              className="text-white focus:outline-none">
-              <FaXmark className="h-6 w-6" />
-            </button>
+            
           </div>
           <div className="mt-4 space-y-4">
             {navItems.map(({ link, path }) => (
